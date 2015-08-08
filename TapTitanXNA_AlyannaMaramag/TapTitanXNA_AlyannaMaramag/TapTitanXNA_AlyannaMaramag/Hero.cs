@@ -16,13 +16,14 @@ namespace TapTitanXNA_AlyannaMaramag
         Vector2 playerPosition, allyPosition01, allyPosition02, monsterPosition;
         ContentManager content;
         Level level;
-        //float timer;
+        int timer = 0;
         int count = 0;
 
-        Animation idleAnimation, attackAnimation;
+        public Animation idleAnimation, attackAnimation;
         Animation ally01, ally02;
         Animation monster01, monster02;
         AnimationPlayer spritePlayer, spriteAlly01, spriteAlly02, spriteMonster01;
+
         #endregion
 
         public Hero(ContentManager content, Level level)
@@ -31,10 +32,7 @@ namespace TapTitanXNA_AlyannaMaramag
             this.level = level;
 
             spritePlayer.PlayAnimation(idleAnimation);
-
         }
-
-
 
         public void LoadContent()
         {
@@ -66,14 +64,12 @@ namespace TapTitanXNA_AlyannaMaramag
             spriteAlly02.PlayAnimation(ally02);
 
 
-            monster01 = new Animation(Monster01, 0.09f, false, 1);
+            monster01 = new Animation(Monster01, 0.05f, false, 1);
             int mPositionX = (Level.windowWidth / 2) - (Monster01.Width / 2);
             int mPositionY = (Level.windowHeight / 3) - (Monster01.Height / 2);
             monsterPosition = new Vector2((float)mPositionX, (float)mPositionY);
             spriteMonster01.PlayAnimation(monster01);
-            monster02 = new Animation(Monster02, 0.2f, false, 7);
-
-
+            monster02 = new Animation(Monster02, 0.15f, false, 7);
 
             spritePlayer.PlayAnimation(idleAnimation);
 
@@ -87,29 +83,36 @@ namespace TapTitanXNA_AlyannaMaramag
                 {
                     spritePlayer.PlayAnimation(idleAnimation);
                     //playerPosition.X++;
-
                 }
             }
 
             if (level.mouseState.LeftButton == ButtonState.Pressed && level.oldMouseState.LeftButton == ButtonState.Released)
             {
+                timer = 0;
+                spritePlayer.Animation.islooping = true;
                 if (playerPosition.X != 0)
-                {
-                    spritePlayer.PlayAnimation(attackAnimation);
+                {                    
+                    //if (spritePlayer.Animation.islooping == true)
+                    //{
+                    //    spritePlayer.PlayAnimation(attackAnimation);
+                    //    spritePlayer.Animation.islooping = false;
+                    //}
 
                     if (spritePlayer.Animation.islooping == false)
                     {
-                        //spritePlayer.Animation.islooping = true;
-                        count++;
-                    }
-                    if (count >= 10)
-                    {
-                        spriteMonster01.PlayAnimation(monster02);
-                        count = 0;
-                    }
-                    if (count <= 10)
+                        spritePlayer.PlayAnimation(idleAnimation);
+                        spritePlayer.Animation.islooping = false;
+                    }  
+               
+                    if (level.health != 0 && timer != 0)
                     {
                         spriteMonster01.PlayAnimation(monster01);
+                        timer=0;
+                    }
+                    if(level.health == 0 && timer == 0)
+                    {
+                        spriteMonster01.PlayAnimation(monster02);
+
                     }
                 }
             }
@@ -124,6 +127,16 @@ namespace TapTitanXNA_AlyannaMaramag
                 allyPosition01, SpriteEffects.None);
             spriteAlly02.Draw(gameTime, spriteBatch,
                 allyPosition02, SpriteEffects.None);
+        }
+
+        public void PlayAttackAnimation()
+        {
+            spritePlayer.PlayAnimation(attackAnimation);
+        }
+
+        public void PlayIdleAnimation()
+        {
+            spritePlayer.PlayAnimation(idleAnimation);
         }
     }
 }

@@ -172,6 +172,42 @@
       <Output>C:\Users\Ma.Alyanna\Desktop\WinProg\TapTitanXNA_AlyannaMaramag\TapTitanXNA_AlyannaMaramag\TapTitanXNA_AlyannaMaramag\bin\x86\Debug\Content\Monster\Monster02.xnb</Output>
       <Time>2015-08-01T08:53:40.4617249+08:00</Time>
     </Item>
+    <Item>
+      <Source>Button\buttonAlly0101.png</Source>
+      <Name>Button\buttonAlly0101</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Ma.Alyanna\Desktop\WinProg\TapTitanXNA_AlyannaMaramag\TapTitanXNA_AlyannaMaramag\TapTitanXNA_AlyannaMaramag\bin\x86\Debug\Content\Button\buttonAlly0101.xnb</Output>
+      <Time>2015-08-08T09:48:32.1319999+08:00</Time>
+    </Item>
+    <Item>
+      <Source>Button\buttonAlly0102.png</Source>
+      <Name>Button\buttonAlly0102</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Ma.Alyanna\Desktop\WinProg\TapTitanXNA_AlyannaMaramag\TapTitanXNA_AlyannaMaramag\TapTitanXNA_AlyannaMaramag\bin\x86\Debug\Content\Button\buttonAlly0102.xnb</Output>
+      <Time>2015-08-08T09:48:32.1350016+08:00</Time>
+    </Item>
+    <Item>
+      <Source>Button\buttonAlly0202.png</Source>
+      <Name>Button\buttonAlly0202</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Ma.Alyanna\Desktop\WinProg\TapTitanXNA_AlyannaMaramag\TapTitanXNA_AlyannaMaramag\TapTitanXNA_AlyannaMaramag\bin\x86\Debug\Content\Button\buttonAlly0202.xnb</Output>
+      <Time>2015-08-08T09:48:32.1640222+08:00</Time>
+    </Item>
+    <Item>
+      <Source>Button\buttonAlly0201.png</Source>
+      <Name>Button\buttonAlly0201</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Ma.Alyanna\Desktop\WinProg\TapTitanXNA_AlyannaMaramag\TapTitanXNA_AlyannaMaramag\TapTitanXNA_AlyannaMaramag\bin\x86\Debug\Content\Button\buttonAlly0201.xnb</Output>
+      <Time>2015-08-08T09:49:38.8293845+08:00</Time>
+    </Item>
     <BuildSuccessful>true</BuildSuccessful>
     <Settings>
       <TargetPlatform>Windows</TargetPlatform>

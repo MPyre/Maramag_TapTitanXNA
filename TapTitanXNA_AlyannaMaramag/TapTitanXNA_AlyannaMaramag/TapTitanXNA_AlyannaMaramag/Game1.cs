@@ -22,9 +22,6 @@ namespace TapTitanXNA_AlyannaMaramag
         ContentManager content;
         Level level;
         #endregion
-//        Texture2D monster;
-//        Texture2D ally;
-//        Vector2 monsterPosition;
 
         public Game1()
         {
@@ -69,14 +66,6 @@ namespace TapTitanXNA_AlyannaMaramag
             spriteBatch = new SpriteBatch(GraphicsDevice);
 
             level.LoadContent();
-            //monster = content.Load<Texture2D>("Monster/Monster01");
-            //ally = content.Load<Texture2D>("Ally/Alllll");
-
-
-            //int mPositionX = (windowWidth / 2) - (monster.Width / 2);
-            //int mPositionY = (windowHeight / 3) - (monster.Height / 2);
-            //monsterPosition = new Vector2((float)mPositionX, (float)mPositionY);
-
             
             // TODO: use this.Content to load your game content here
         }
@@ -124,19 +113,7 @@ namespace TapTitanXNA_AlyannaMaramag
             // TODO: Add your drawing code here
             spriteBatch.Begin();
             level.Draw(gameTime, spriteBatch);
-            /*
-            //spriteBatch.Draw(monster, Vector2.Zero, Color.White);
-            spriteBatch.Draw(monster,
-            monsterPosition,
-            null,
-            Color.White,
-            0.0f,
-            Vector2.Zero,
-            1.0f,
-            SpriteEffects.None,
-            0.0f);
-            spriteBatch.Draw(ally, playerPosition, Color.White);
-            */
+
             spriteBatch.End();
             
             base.Draw(gameTime);

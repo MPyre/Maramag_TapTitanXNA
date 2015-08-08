@@ -32,3 +32,7 @@ C:\Users\Ma.Alyanna\Desktop\WinProg\TapTitanXNA_AlyannaMaramag\TapTitanXNA_Alyan
 C:\Users\Ma.Alyanna\Desktop\WinProg\TapTitanXNA_AlyannaMaramag\TapTitanXNA_AlyannaMaramag\TapTitanXNA_AlyannaMaramag\bin\x86\Debug\Content\Button\buttona.xnb
 C:\Users\Ma.Alyanna\Desktop\WinProg\TapTitanXNA_AlyannaMaramag\TapTitanXNA_AlyannaMaramag\TapTitanXNA_AlyannaMaramag\bin\x86\Debug\Content\Button\buttonb.xnb
 C:\Users\Ma.Alyanna\Desktop\WinProg\TapTitanXNA_AlyannaMaramag\TapTitanXNA_AlyannaMaramag\TapTitanXNA_AlyannaMaramag\bin\x86\Debug\Content\Monster\Monster02.xnb
+C:\Users\Ma.Alyanna\Desktop\WinProg\TapTitanXNA_AlyannaMaramag\TapTitanXNA_AlyannaMaramag\TapTitanXNA_AlyannaMaramag\bin\x86\Debug\Content\Button\buttonAlly0101.xnb
+C:\Users\Ma.Alyanna\Desktop\WinProg\TapTitanXNA_AlyannaMaramag\TapTitanXNA_AlyannaMaramag\TapTitanXNA_AlyannaMaramag\bin\x86\Debug\Content\Button\buttonAlly0102.xnb
+C:\Users\Ma.Alyanna\Desktop\WinProg\TapTitanXNA_AlyannaMaramag\TapTitanXNA_AlyannaMaramag\TapTitanXNA_AlyannaMaramag\bin\x86\Debug\Content\Button\buttonAlly0202.xnb
+C:\Users\Ma.Alyanna\Desktop\WinProg\TapTitanXNA_AlyannaMaramag\TapTitanXNA_AlyannaMaramag\TapTitanXNA_AlyannaMaramag\bin\x86\Debug\Content\Button\buttonAlly0201.xnb
